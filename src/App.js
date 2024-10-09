@@ -1,20 +1,21 @@
-import "./App.css";
+import './App.css';
+import React from 'react';
 
 function App() {
   const clickNotify = () => {
-    if (Notification.permission === "granted") {
-      new Notification("Notification Title", {
-        body: "This is the notification message.",
-        icon: "/path/to/icon.png", // Optional: add an icon
+    if (Notification.permission === 'granted') {
+      new Notification('Notification Title', {
+        body: 'This is the notification message.',
+        icon: '/path/to/icon.png', // Optional: add an icon
       }).onclick = () => {
-        window.open("https://yourwebsite.com", "_blank");
+        window.open('https://yourwebsite.com', '_blank');
       };
     } else {
-      console.log("Notification permission denied");
+      console.log('Notification permission denied');
     }
   };
   return (
-    <div className="App">
+    <div className='App'>
       <button onClick={clickNotify}>Click me</button>
     </div>
   );
