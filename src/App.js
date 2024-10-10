@@ -1,7 +1,10 @@
 import './App.css';
 import React from 'react';
-
+import {useState} from 'react';
 function App() {
+  const [first] = useState(0);
+  console.log(first);
+
   const clickNotify = () => {
     if (Notification.permission === 'granted') {
       new Notification('Notification Title', {
