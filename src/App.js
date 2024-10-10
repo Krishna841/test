@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import { useState } from 'react';
 function App() {
-  const [lol] = useState(0);
-  console.log(lol);
+  const [mira] = useState(0);
+  console.log(mira);
 
   const clickNotify = () => {
     if (Notification.permission === 'granted') {
