@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
-import {useState} from 'react';
+import { useState } from 'react';
 function App() {
-  const [sec] = useState(0);
-  console.log(sec);
+  const [lol] = useState(0);
+  console.log(lol);
 
   const clickNotify = () => {
     if (Notification.permission === 'granted') {
